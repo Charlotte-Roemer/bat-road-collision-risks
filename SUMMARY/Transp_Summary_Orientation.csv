@@ -1,0 +1,6 @@
+Variable;Eptser;Eptser.1;Eptser.2;Hypsav;Hypsav.1;Hypsav.2;Minsch;Minsch.1;Minsch.2;Myobly/myo;Myobly/myo;Myobly/myo;Nyclei;Nyclei.1;Nyclei.2;Pipkuh/nat;Pipkuh/nat;Pipkuh/nat;Pippip;Pippip.1;Pippip.2;Pippyg;Pippyg.1;Pippyg.2;Plesp;Plesp.1;Plesp.2;SRE;SRE;SRE;MRE;MRE;MRE;LRE;LRE;LRE
+Type;B;SE;p;B;SE;p;B;SE;p;B;SE;p;B;SE;p;B;SE;p;B;SE;p;B;SE;p;B;SE;p;B;SE;p;B;SE;p;B;SE;p
+Intercept;2.32;0.48;***;1.00;0.38;**;1.08;0.21;***;1.53;0.33;***;1.19;0.34;***;1.42;0.11;***;1.38;0.12;***;1.56;0.17;***;1.41;0.65;*;1.77;0.29;***;1.51;0.12;***;1.55;0.30;***
+Traffic;;;;;;;;;;;;;;;;;;;0.24;0.10;*;;;;;;;;;;;;;;;
+JJulien_scaled;0.68;0.47;;0.65;0.77;;0.22;0.14;;0.06;0.18;;-0.01;0.26;;0.02;0.10;;-0.17;0.09;.;0.22;0.12;.;0.31;0.32;;0.36;0.20;.;0.06;0.07;;0.20;0.23;
+I(JJulien_scaled^2);-0.66;0.51;;1.38;1.09;;0.02;0.13;;-0.28;0.20;;0.02;0.22;;-0.12;0.09;;-0.05;0.09;;-0.06;0.12;;-0.27;0.35;;-0.35;0.20;.;-0.14;0.07;*;-0.18;0.21;
