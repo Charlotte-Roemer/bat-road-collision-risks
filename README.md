@@ -1,9 +1,9 @@
 # bat-road-collision-risks
  
 
-##########################################################################################################
+
 # Authors: Charlotte Roemer and Yves Bas
-##########################################################################################################
+
 
 # The tables can be downloaded on this link: https://b2drop.eudat.eu/s/RabMap7dnHwsnJX
 
