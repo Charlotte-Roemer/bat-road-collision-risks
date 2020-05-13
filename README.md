@@ -2,7 +2,7 @@
  
 
 
-# Authors: Charlotte Roemer and Yves Bas
+# Authors: Charlotte Roemer, AurÃ©lie Coulon, Thierry Disca and Yves Bas
 
 
 # The tables can be downloaded on this link: https://b2drop.eudat.eu/s/RabMap7dnHwsnJX
@@ -13,9 +13,9 @@
 # C:\Users\Username\bat-road-collision-risks ,
 # then you should type setwd( "C:/Users/Username") in R
 
-# Unzip the tables in a « Tables » folder (./bat-road-collision-risks/Tables)
+# Unzip the tables in a Â«Â TablesÂ Â» folder (./bat-road-collision-risks/Tables)
 
-# Create an empty « SIM_PREDICT » folder (./bat-road-collision-risks/SIM_PREDICT)
+# Create an empty Â«Â SIM_PREDICTÂ Â» folder (./bat-road-collision-risks/SIM_PREDICT)
 
 # Start with folder 1_Creation_tables and follow script order (instructions within), 
 # or choose the script of your choice, but some scripts may only work when previous scripts are run first
