@@ -133,8 +133,7 @@ for (i in 1:length(Liste_Sp)){
   }
 }
 
-# Inverse of column vehicle avoidance because we want a proportion of NOT avoided vehicles
-Pred_FINAL$LagNotAvoided_predicted=1-Pred_FINAL$Lag_predicted
+Pred_FINAL$LagNotAvoided_predicted=Pred_FINAL$Lag_predicted
 
 # Add constants (mean of raw values) in empty columns and multiply predicts
 
@@ -142,11 +141,11 @@ Pred_FINAL$Predicted_Product=NA
 
 # Hypsav
 Pred_FINAL$LagNotAvoided_predicted[which(!is.na(Pred_FINAL$Paysage) & Pred_FINAL$Species == "Hypsav")]=
-  mean(1-MaDataLagVehiNew$LagvehiCat[which(MaDataLagVehiNew$Espece == "Hypsav")])
+  mean(MaDataLagVehiNew$LagvehiCat[which(MaDataLagVehiNew$Espece == "Hypsav")])
 
 # Minsch
 # Pred_FINAL$LagNotAvoided_predicted[which(!is.na(Pred_FINAL$Paysage) & Pred_FINAL$Species == "Minsch")]=
-#   mean(1-MaDataLagVehiNew$LagvehiCat[which(MaDataLagVehiNew$Espece=="Minsch")])
+#   mean(MaDataLagVehiNew$LagvehiCat[which(MaDataLagVehiNew$Espece=="Minsch")])
 
 # Myodau
 # Pred_FINAL$Acti_predicted[which(!is.na(Pred_FINAL$H_veg) & Pred_FINAL$Species == "Myodau")]=
@@ -162,7 +161,7 @@ Pred_FINAL$Acti_predicted[which(!is.na(Pred_FINAL$N_vehi_nuit_1200) & Pred_FINAL
 
 # Pippip
 Pred_FINAL$LagNotAvoided_predicted[which(!is.na(Pred_FINAL$Paysage) & Pred_FINAL$Species == "Pippip")]=
-  mean(1-MaDataLagVehiNew$LagvehiCat[which(MaDataLagVehiNew$Espece=="Pippip")])
+  mean(MaDataLagVehiNew$LagvehiCat[which(MaDataLagVehiNew$Espece=="Pippip")])
 # Pred_FINAL$Acti_predicted[which(!is.na(Pred_FINAL$N_vehi_nuit_1200) & Pred_FINAL$Species == "Pippip")]=
 #   mean(MaDataActiNew$Median[which(MaDataActiNew$Espece=="Pippip")])
 
@@ -172,9 +171,9 @@ Pred_FINAL$LagNotAvoided_predicted[which(!is.na(Pred_FINAL$Paysage) & Pred_FINAL
 
 # Plesp
 # Pred_FINAL$LagNotAvoided_predicted[which(!is.na(Pred_FINAL$N_vehi_nuit_1200) & Pred_FINAL$Species == "Plesp")]=
-#   mean(1-MaDataLagVehiNew$LagvehiCat[which(MaDataLagVehiNew$Espece=="Plesp")])
+#   mean(MaDataLagVehiNew$LagvehiCat[which(MaDataLagVehiNew$Espece=="Plesp")])
 Pred_FINAL$LagNotAvoided_predicted[which(!is.na(Pred_FINAL$JJulien) & Pred_FINAL$Species == "Plesp")]=
-  mean(1-MaDataLagVehiNew$LagvehiCat[which(MaDataLagVehiNew$Espece=="Plesp")])
+  mean(MaDataLagVehiNew$LagvehiCat[which(MaDataLagVehiNew$Espece=="Plesp")])
 
 # SRE
 Pred_FINAL$Acti_predicted[which(!is.na(Pred_FINAL$N_vehi_nuit_1200) & Pred_FINAL$Species == "Ferme")]=

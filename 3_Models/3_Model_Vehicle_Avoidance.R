@@ -20,8 +20,8 @@ MaDataRiskNewBIND$Paysage <- factor(MaDataRiskNewBIND$Paysage, levels = c("F", "
 
 # Create vehicle avoidance binomial variable
 MaDataRiskNewBIND$LagVehi[is.na(MaDataRiskNewBIND$LagVehi)]= 3600
-MaDataRiskNewBIND$LagvehiCat[abs(MaDataRiskNewBIND$LagVehi)<=10]=0
-MaDataRiskNewBIND$LagvehiCat[abs(MaDataRiskNewBIND$LagVehi)>10]=1
+MaDataRiskNewBIND$LagvehiCat[abs(MaDataRiskNewBIND$LagVehi)<=10]=1
+MaDataRiskNewBIND$LagvehiCat[abs(MaDataRiskNewBIND$LagVehi)>10]=0
 
 # List of species and guilds for which we want to build models
 Liste_Sp=c("Pippip","Pip35","Pippyg","Hypsav","Minsch","Nyclei","MyoGT","Myodau","Eptser",
